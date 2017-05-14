@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1117</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form1</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> QGroupBox {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+     border: 2px solid gray;
+     border-radius: 5px;
+	 font-family: &quot;Arial&quot;;
+     margin-top: 1ex; /* оставляем пространство вверху для заголовка */
+ }
+
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top center; /* помещаем вверху по центру */
+     padding: 0 3px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #FFOECE, stop: 1 #FFFFFF);
+ }
+
+
+ QGroupBox::indicator {
+     width: 13px;
+     height: 13px;
+ }
+
+ QGroupBox::indicator:unchecked {
+     image: url(:/images/checkbox_unchecked.png);
+ }
+
+QPushButton#evilButton {
+     background-color: red;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px;
+ }
+ QPushButton#evilButton:pressed {
+     background-color: rgb(224, 0, 0);
+     border-style: inset;
+ }
+
+QLineEdit { 
+	 background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+}
+
+QWidget {
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>221</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>CAPTCHA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="recognizeBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>211</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Recognize</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>10</y>
+     <width>101</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Letter_1</string>
+   </property>
+   <widget class="QLabel" name="label_letter1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>101</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Letter_2</string>
+   </property>
+   <widget class="QLabel" name="label_letter2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>10</y>
+     <width>101</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Letter_3</string>
+   </property>
+   <widget class="QLabel" name="label_letter3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>10</y>
+     <width>101</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Letter_4</string>
+   </property>
+   <widget class="QLabel" name="label_letter4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="edtRecognizeText">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>130</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="matrix_1">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>130</y>
+     <width>201</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="matrix_2">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>130</y>
+     <width>201</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="matrix_3">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>130</y>
+     <width>201</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="matrix_4">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>130</y>
+     <width>201</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
