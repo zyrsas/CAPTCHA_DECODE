@@ -20,7 +20,7 @@ if __name__=='__main__':
     for name in '23456789ABCDEFGHIJKLMNOPQRSTUVWXYZ':
         if os.path.exists('%s.png' %name):
             result.append('\'%s\': %s,' %(name,get_matrix('%s.png' %name)))
-            print result
-    result='{'+''.join(result)+'}'
 
+    result='{'+''.join(result)+'}'
+    print result
 

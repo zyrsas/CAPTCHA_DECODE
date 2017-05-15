@@ -110,9 +110,9 @@ def split_picture(pic_name):
         count += 1
 
 
-def get_train_set(count=1000):
+def get_train_set(path, count=1000):
     for i in range(0, count):
-        split_picture(convert_to_bw(get_pic('train_set\origin\%d.jpg' % i)))
+        split_picture(convert_to_bw(get_pic(path)))
         print (i)
         time.sleep(1)
 

@@ -31,7 +31,7 @@ def get_distance(sou,dest):
 def identify_pic(pic_name):
     resize_pic(pic_name)
     value=get_pic_list(pic_name)
-    c,min_dist=d[d.keys()[0]],get_distance(value,d.keys()[0])
+    c,min_dist=d[d.keys()[0]],get_distance(value, d.keys()[0])
     for key in d:
         tmp=get_distance(value,key)
         if tmp<min_dist:
@@ -39,4 +39,4 @@ def identify_pic(pic_name):
     return c
 
 if __name__=='__main__':
-    print identify_pic('2.jpg')
+    print identify_pic('0_1.png')

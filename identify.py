@@ -40,4 +40,4 @@ def identify_pic(pic_name,threshold=21):
     return c
 
 if __name__=='__main__':
-    print identify_pic('281_2.png')
+    print identify_pic('0_0.png')
